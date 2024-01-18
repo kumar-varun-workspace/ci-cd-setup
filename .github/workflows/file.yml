@@ -8,7 +8,7 @@ on:
           default: "smoke"
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted]
     steps:
     - run: echo "Hello world!"
   
