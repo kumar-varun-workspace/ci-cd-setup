@@ -6,6 +6,10 @@ on:
           description: "groups"
           required: true
           default: "smoke"
+       xmlFiles:
+          description: "xmlFiles"
+          required: true
+          default: "smokeGrid.xml"
 jobs:
   test:
     runs-on: [self-hosted]
