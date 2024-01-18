@@ -1,0 +1,12 @@
+name: Basic Workflow
+on:
+  workflow_dispatch:
+    inputs:
+       groups: 
+          description: "groups"
+          required: true
+          default: "smoke"
+        xml:
+          description: "xml"
+          required: true
+          default: "smokeGrid.xml"
