@@ -10,6 +10,6 @@ jobs:
   greet:
     runs-on: ubuntu-latest
     steps:
-      -name: Send greeting
-       run: echo "Hello all"
+      - name: Send greeting
+        run: echo "Hello all"
   
