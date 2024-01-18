@@ -10,3 +10,10 @@ on:
           description: "xml"
           required: true
           default: "smokeGrid.xml"
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      -name: Send greeting
+      run: echo "Hello all"
+  
