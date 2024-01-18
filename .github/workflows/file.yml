@@ -7,9 +7,8 @@ on:
           required: true
           default: "smoke"
 jobs:
-  greet:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name: Send greeting
-        run: echo "Hello"
+    - run: echo "Hello world!"
   
