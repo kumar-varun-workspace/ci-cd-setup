@@ -22,7 +22,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: demo workflow job
       - if: ${{ github.event.inputs. == 'smokeGrid.xml' }}
+        name: demo workflow job
         run: echo This is a smokeGrid.xml
         
