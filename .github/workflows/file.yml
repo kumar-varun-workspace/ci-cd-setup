@@ -17,10 +17,12 @@ on:
           type: choice
           options:
             - smokeGrid.xml
-            - smokeGridPcl.xml                   
+            - smokeGridPcl.xml 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: demo workflow job
-        run: echo This is a demo start workflow
+      - if: ${{ github.event.inputs. == 'smokeGrid.xml' }}
+        run: echo This is a smokeGrid.xml
+        
