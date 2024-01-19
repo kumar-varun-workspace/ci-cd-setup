@@ -19,8 +19,9 @@ on:
             - smokeGrid.xml
             - smokeGridPcl.xml                   
 jobs:
-  my_job_name:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        run: echo "Hello"
+      - uses: actions/checkout@v3
+      - name: demo workflow job
+        run: echo This is a demo start workflow
