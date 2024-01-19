@@ -23,5 +23,6 @@ jobs:
   test:
     runs-on: [self-hosted]
     steps:
-     - name: Code
-       run: echo "Hello world!"
+      - name: Checkout code
+        uses: actions/checkout@v2
+
