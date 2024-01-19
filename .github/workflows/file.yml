@@ -6,10 +6,6 @@ on:
           description: "groups"
           required: true
           default: "smoke"
-          type: choice
-          options:
-            - smoke
-            - ete
        xmlFiles:
           description: "xmlFiles"
           required: true
@@ -17,11 +13,11 @@ on:
           type: choice
           options:
             - smokeGrid.xml
-            - smokeGridPcl.xml
+            - smokeGridPcl.xml                   
       
 jobs:
   test:
     runs-on: [self-hosted]
     steps:
-    - run: echo "Hello world!"
-  
+     - name: Code
+     - run: echo "Hello world!"
