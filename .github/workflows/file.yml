@@ -15,10 +15,7 @@ on:
             - smokeGrid.xml
             - smokeGridPcl.xml
           if: ${{ github.events.input.xmlFiles }} == "smokeGrid.xml"
-              abc:
-                 desciption:"abc"
-                 required:"true"
-                 default:"def"
+      
 jobs:
   test:
     runs-on: [self-hosted]
