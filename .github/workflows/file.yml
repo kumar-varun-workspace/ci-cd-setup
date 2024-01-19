@@ -10,6 +10,10 @@ on:
           description: "xmlFiles"
           required: true
           default: "smokeGrid.xml"
+          type: choice
+          options:
+            - smokeGrid.xml
+            - smokeGridPcl.xml
 jobs:
   test:
     runs-on: [self-hosted]
