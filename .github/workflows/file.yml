@@ -6,6 +6,10 @@ on:
           description: "groups"
           required: true
           default: "smoke"
+          type: choice
+          options:
+            - local
+            - ete
        xmlFiles:
           description: "xmlFiles"
           required: true
