@@ -18,9 +18,8 @@ on:
           options:
             - smokeGrid.xml
             - smokeGridPcl.xml                   
-      
 jobs:
-  test:
+  my_job_name:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
