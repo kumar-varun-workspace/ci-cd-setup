@@ -44,42 +44,42 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - if: ${{ github.event.inputs.TestCases == ${{ env.testcase1 }} }}
+      - if: ${{ github.event.inputs.TestCases }} == ${{ env.testcase1 }} 
         name: Running $testcase1
         run: echo $testcase1
-      - if: ${{ github.event.inputs.TestCases == ${{ env.testcase2 }} }}
+      - if: ${{ github.event.inputs.TestCases }} == ${{ env.testcase2 }} 
         name: Running $testcase2
         run: echo $testcase2
-      - if: ${{ github.event.inputs.TestCases == ${{ env.testcase3 }} }}
+      - if: ${{ github.event.inputs.TestCases }} == ${{ env.testcase3 }} 
         name: Running $testcase3
         run: echo $testcase3
-      - if: ${{ github.event.inputs.TestCases == ${{ env.testcase4 }} }}
+      - if: ${{ github.event.inputs.TestCases }} == ${{ env.testcase4 }} 
         name: Running $testcase4
         run: echo $testcase4
-      - if: ${{ github.event.inputs.TestCases == ${{ env.testcase5 }} }}
+      - if: ${{ github.event.inputs.TestCases }} == ${{ env.testcase5 }} 
         name: Running $testcase5
         run: echo $testcase5
-      - if: ${{ github.event.inputs.TestCases == ${{ env.testcase6 }} }}
+      - if: ${{ github.event.inputs.TestCases }} == ${{ env.testcase6 }} 
         name: Running $testcase6
         run: echo $testcase6
-      - if: ${{ github.event.inputs.TestCases == ${{ env.testcase7 }} }}
+      - if: ${{ github.event.inputs.TestCases }} == ${{ env.testcase7 }} 
         name: Running $testcase7
         run: echo $testcase7
-      - if: ${{ github.event.inputs.TestCases == ${{ env.testcase8 }} }}
+      - if: ${{ github.event.inputs.TestCases }} == ${{ env.testcase8 }} 
         name: Running $testcase8
         run: echo $testcase8
-      - if: ${{ github.event.inputs.TestCases == ${{ env.testcase9 }} }}
+      - if: ${{ github.event.inputs.TestCases }} == ${{ env.testcase9 }} 
         name: Running $testcase9
         run: echo $testcase9
-      - if: ${{ github.event.inputs.TestCases == ${{ env.testcase10 }} }}
+      - if: ${{ github.event.inputs.TestCases }} == ${{ env.testcase10 }} 
         name: Running $testcase10
         run: echo $testcase10
-      - if: ${{ github.event.inputs.TestCases == ${{ env.testcase11 }} }}
+      - if: ${{ github.event.inputs.TestCases }} == ${{ env.testcase11 }} 
         name: Running $testcase11
         run: echo $testcase11
-      - if: ${{ github.event.inputs.TestCases == ${{ env.testcase12 }} }}
+      - if: ${{ github.event.inputs.TestCases }} == ${{ env.testcase12 }} 
         name: Running $testcase12
         run: echo $testcase12
-      - if: ${{ github.event.inputs.TestCases == ${{ env.testcase13 }} }}
+      - if: ${{ github.event.inputs.TestCases }} == ${{ env.testcase13 }} 
         name: Running $testcase1
         run: echo $testcase13
