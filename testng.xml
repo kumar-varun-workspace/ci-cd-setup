@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke">
+    <test name="First Test">
+        <parameter name="username" value="Varun"></parameter>
+        <parameter name="password" value="Kumar"></parameter>
+        <groups>
+            <run>
+                <include name="calling_this_method_from_testng"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="packageName"/>
+        </packages>
+    </test>
+</suite>
