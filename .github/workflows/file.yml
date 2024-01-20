@@ -1,4 +1,33 @@
-name: Smoke (Daily Test Execution)
+name: Smoke (Daily Test Execution)  
+on:
+  workflow_dispatch:
+    inputs:
+       groups: 
+          description: "groups"
+          required: true
+          default: "smoke"
+          type: choice
+          options:
+            - smoke
+       TestCases:
+          description: "Select the test case to run"
+          required: true
+          default: $testcase1
+          type: choice
+          options:
+            - echo "$testcase1"
+            - echo $testcase2
+            - echo $testcase3
+            - echo $testcase4
+            - echo $testcase5
+            - echo $testcase6
+            - echo $testcase7
+            - echo $testcase8
+            - echo $testcase9
+            - echo $testcase10
+            - echo $testcase11
+            - echo $testcase12
+            - echo $testcase13    
 env:
   testcase1: Test Case 1 -  E2E Non-EBT test case
   testcase2: Test Case 2 -  E2E Mutiple Order test case
@@ -14,40 +43,11 @@ env:
   testcase12: Test Case 12 - E2E Picked AM to Staged FR test case
   testcase13: Test Case 13 - E2E Dynamic Batching test case
   
-on:
-  workflow_dispatch:
-    inputs:
-       groups: 
-          description: "groups"
-          required: true
-          default: "smoke"
-          type: choice
-          options:
-            - smoke
-       TestCases:
-          description: "Select the test case to run"
-          required: true
-          default: "Test Case 1 -  E2E Non-EBT test case"
-          type: choice
-          options:
-            - echo $testcase1
-            - echo $testcase2
-            - echo $testcase3
-            - echo $testcase4
-            - echo $testcase5
-            - echo $testcase6
-            - echo $testcase7
-            - echo $testcase8
-            - echo $testcase9
-            - echo $testcase10
-            - echo $testcase11
-            - echo $testcase12
-            - echo $testcase13            
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - if: ${{ github.event.inputs.TestCases == 'Test Case 1 -  E2E Non-EBT test case' }}
         name: demo workflow job
-        run: echo This is a smokeGrid.xml
+        run: echo $testcase1
         
