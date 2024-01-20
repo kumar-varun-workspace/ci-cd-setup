@@ -7,14 +7,12 @@ on:
        groups: 
           description: "groups"
           required: true
-          default: "smoke"
           type: choice
           options:
             - smoke
        TestCases:
           description: "Select the test case to run"
           required: true
-          default: echo "$TEST"
           type: choice
           options:
               - "Test Case 1 -  E2E Non-EBT test case"
@@ -36,5 +34,5 @@ jobs:
     steps:
       - if: ${{ github.event.inputs.TestCases == 'Test Case 1 -  E2E Non-EBT test case' }}
         name: demo workflow job
-        run: echo $testcase1
+        run: echo $TEST
         
