@@ -1,9 +1,7 @@
 name: Practice
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch
 
 jobs:
   your-job:
