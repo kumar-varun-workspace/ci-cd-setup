@@ -44,13 +44,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - if: ${{ github.event.inputs.TestCases }} == ${{ env.testcase1 }} 
+      - if: ${{ ${{ github.event.inputs.TestCases }} == ${{ env.testcase1 }} }}
         name: Running $testcase1
         run: echo $testcase1
-      - if: ${{ github.event.inputs.TestCases }} == ${{ env.testcase2 }} 
+      - if: ${{ ${{ github.event.inputs.TestCases }} == ${{ env.testcase2 }} }}
         name: Running $testcase2
         run: echo $testcase2
-      - if: ${{ github.event.inputs.TestCases }} == ${{ env.testcase3 }} 
+      - if: ${{ ${{ github.event.inputs.TestCases }} == ${{ env.testcase3 }} }}
         name: Running $testcase3
         run: echo $testcase3
       - if: ${{ github.event.inputs.TestCases }} == ${{ env.testcase4 }} 
