@@ -15,18 +15,18 @@ on:
           default: "Test Case 1 -  E2E Non-EBT test case"
           type: choice
           options:
-            - Test Case 1 -  E2E Non-EBT test case
-            - Test Case 2 -  E2E Mutiple Order test case
-            - Test Case 3 -  E2E Harris Teeter test case
-            - Test Case 4 -  E2E Shipt Delivery Test case
-            - Test Case 5 -  E2E PCL All Fulfillment Test case
-            - Test Case 7 -  E2E Carry Over Take Over test case
-            - Test Case 8 -  E2E Reuse Pcl Test case
-            - Test Case 9 -  E2E PCL Modify and Cancel test case
-            - Test Case 10 - E2E Preweighed Item Movement test case
-            - Test Case 11 - E2E Picked FR to Staged AM test case
-            - Test Case 12 - E2E Picked AM to Staged FR test case
-            - Test Case 13 - E2E Dynamic Batching test case         
+            - "Test Case 1 -  E2E Non-EBT test case"
+            - "Test Case 2 -  E2E Mutiple Order test case"
+            - "Test Case 3 -  E2E Harris Teeter test case"
+            - "Test Case 4 -  E2E Shipt Delivery Test case"
+            - "Test Case 5 -  E2E PCL All Fulfillment Test case"
+            - "Test Case 7 -  E2E Carry Over Take Over test case"
+            - "Test Case 8 -  E2E Reuse Pcl Test case"
+            - "Test Case 9 -  E2E PCL Modify and Cancel test case"
+            - "Test Case 10 - E2E Preweighed Item Movement test case"
+            - "Test Case 11 - E2E Picked FR to Staged AM test case"
+            - "Test Case 12 - E2E Picked AM to Staged FR test case"
+            - "Test Case 13 - E2E Dynamic Batching test case"         
 jobs:
   build:
     runs-on: ubuntu-latest
