@@ -1,4 +1,19 @@
 name: Smoke (Daily Test Execution)
+env:
+  testcase1: Test Case 1 -  E2E Non-EBT test case
+  testcase2: Test Case 2 -  E2E Mutiple Order test case
+  testcase3: Test Case 3 -  E2E Harris Teeter test case
+  testcase4: Test Case 4 -  E2E Shipt Delivery Test case
+  testcase5: Test Case 5 -  E2E PCL All Fulfillment Test case
+  testcase6: Test Case 6 -  E2E Carry Over Take Over test case
+  testcase7: Test Case 7 -  E2E Reuse Pcl Test case
+  testcase8: Test Case 8 -  E2E PCL Modify and Cancel test case
+  testcase9: Test Case 9 - E2E Preweighed Item Movement test case
+  testcase10: Test Case 10 - E2E Subs Movement test case
+  testcase11: Test Case 11 - E2E Picked FR to Staged AM test case
+  testcase12: Test Case 12 - E2E Picked AM to Staged FR test case
+  testcase13: Test Case 13 - E2E Dynamic Batching test case
+  
 on:
   workflow_dispatch:
     inputs:
@@ -15,23 +30,25 @@ on:
           default: "Test Case 1 -  E2E Non-EBT test case"
           type: choice
           options:
-            - "Test Case 1 -  E2E Non-EBT test case"
-            - "Test Case 2 -  E2E Mutiple Order test case"
-            - "Test Case 3 -  E2E Harris Teeter test case"
-            - "Test Case 4 -  E2E Shipt Delivery Test case"
-            - "Test Case 5 -  E2E PCL All Fulfillment Test case"
-            - "Test Case 7 -  E2E Carry Over Take Over test case"
-            - "Test Case 8 -  E2E Reuse Pcl Test case"
-            - "Test Case 9 -  E2E PCL Modify and Cancel test case"
-            - "Test Case 10 - E2E Preweighed Item Movement test case"
-            - "Test Case 11 - E2E Picked FR to Staged AM test case"
-            - "Test Case 12 - E2E Picked AM to Staged FR test case"
-            - "Test Case 13 - E2E Dynamic Batching test case"         
+            - $testcase1
+            - $testcase2
+            - $testcase3
+            - $testcase4
+            - $testcase5
+            - $testcase6
+            - $testcase7
+            - $testcase8
+            - $testcase9
+            - $testcase10
+            - $testcase11
+            - $testcase12
+            - $testcase13            
+            
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - if: ${{ github.event.inputs.xmlFiles == 'smokeGrid.xml' }}
+      - if: ${{ github.event.inputs.TestCases == 'Test Case 1 -  E2E Non-EBT test case' }}
         name: demo workflow job
         run: echo This is a smokeGrid.xml
         
