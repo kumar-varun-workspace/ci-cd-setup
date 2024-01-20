@@ -47,31 +47,31 @@ jobs:
       - name: Check Test Case
         run: |
           if [ "${{ github.event.inputs.TestCases }}" == "${{ env.testcase1 }}" ]; then
-            echo "Running Test Case 1"
+            echo "Running $testcase1"
           elif [ "${{ github.event.inputs.TestCases }}" == "${{ env.testcase2 }}" ]; then
-            echo "Running Test Case 2"
+            echo "Running $testcase2"
           elif [ "${{ github.event.inputs.TestCases }}" == "${{ env.testcase3 }}" ]; then
-            echo "Running Test Case 3"
+            echo "Running $testcase3"
           elif [ "${{ github.event.inputs.TestCases }}" == "${{ env.testcase4 }}" ]; then
-            echo "Running Test Case 4"
+            echo "Running $testcase4"
           elif [ "${{ github.event.inputs.TestCases }}" == "${{ env.testcase5 }}" ]; then
-            echo "Running Test Case 5"
+            echo "Running $testcase5"
           elif [ "${{ github.event.inputs.TestCases }}" == "${{ env.testcase6 }}" ]; then
-            echo "Running Test Case 6"
+            echo "Running $testcase6"
           elif [ "${{ github.event.inputs.TestCases }}" == "${{ env.testcase7 }}" ]; then
-            echo "Running Test Case 7"
+            echo "Running $testcase7"
           elif [ "${{ github.event.inputs.TestCases }}" == "${{ env.testcase8 }}" ]; then
-            echo "Running Test Case 8"
+            echo "Running $testcase8"
           elif [ "${{ github.event.inputs.TestCases }}" == "${{ env.testcase9 }}" ]; then
-            echo "Running Test Case 9"
+            echo "Running $testcase9"
           elif [ "${{ github.event.inputs.TestCases }}" == "${{ env.testcase10 }}" ]; then
-            echo "Running Test Case 10"
+            echo "Running $testcase10"
           elif [ "${{ github.event.inputs.TestCases }}" == "${{ env.testcase11 }}" ]; then
-            echo "Running Test Case 11"
+            echo "Running $testcase11"
           elif [ "${{ github.event.inputs.TestCases }}" == "${{ env.testcase12 }}" ]; then
-            echo "Running Test Case 12"
+            echo "Running $testcase12"
           elif [ "${{ github.event.inputs.TestCases }}" == "${{ env.testcase13 }}" ]; then
-            echo "Running Test Case 13"
+            echo "Running $testcase13"
           else
             echo "Invalid Test Case selected"
           fi
