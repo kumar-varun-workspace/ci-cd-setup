@@ -30,20 +30,19 @@ on:
           default: "Test Case 1 -  E2E Non-EBT test case"
           type: choice
           options:
-            - $testcase1
-            - $testcase2
-            - $testcase3
-            - $testcase4
-            - $testcase5
-            - $testcase6
-            - $testcase7
-            - $testcase8
-            - $testcase9
-            - $testcase10
-            - $testcase11
-            - $testcase12
-            - $testcase13            
-            
+            - echo $testcase1
+            - echo $testcase2
+            - echo $testcase3
+            - echo $testcase4
+            - echo $testcase5
+            - echo $testcase6
+            - echo $testcase7
+            - echo $testcase8
+            - echo $testcase9
+            - echo $testcase10
+            - echo $testcase11
+            - echo $testcase12
+            - echo $testcase13            
 jobs:
   build:
     runs-on: ubuntu-latest
