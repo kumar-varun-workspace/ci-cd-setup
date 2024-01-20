@@ -44,7 +44,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - if: ${{ github.event.inputs.TestCases == $testcase1 }}
+      - if: ${{ github.event.inputs.TestCases == echo "$testcase1" }}
         name: Running $testcase1
         run: echo $testcase1
       - if: ${{ github.event.inputs.TestCases == $testcase2 }}
