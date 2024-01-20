@@ -15,7 +15,7 @@ on:
           default: $testcase1
           type: choice
           options:
-            - echo "$testcase1"
+            - echo $TEST_CASE_1
             - echo $testcase2
             - echo $testcase3
             - echo $testcase4
@@ -29,7 +29,7 @@ on:
             - echo $testcase12
             - echo $testcase13    
 env:
-  testcase1: Test Case 1 -  E2E Non-EBT test case
+  TEST_CASE_1: Test Case 1 -  E2E Non-EBT test case
   testcase2: Test Case 2 -  E2E Mutiple Order test case
   testcase3: Test Case 3 -  E2E Harris Teeter test case
   testcase4: Test Case 4 -  E2E Shipt Delivery Test case
