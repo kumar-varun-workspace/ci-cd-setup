@@ -27,7 +27,11 @@
             <artifactId>testng</artifactId>
             <version>7.9.0</version>
         </dependency>
-
+        <dependency>			<!--Dependency of textreports Report-->
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>5.0.9</version>
+        </dependency>
     </dependencies>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
