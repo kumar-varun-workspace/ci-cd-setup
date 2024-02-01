@@ -8,6 +8,8 @@ on:
           type: choice
           options:
             - smoke
+            - regression
+            - ete
        TestCases:
           description: "Select the test case to run"
           required: true
