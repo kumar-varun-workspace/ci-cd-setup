@@ -87,7 +87,7 @@ jobs:
         with:
           server_address: smtp.gmail.com
           server_port: 587
-          username: varunmahlotra7251@gmail.com
+          username: varunmalhotra7251@gmail.com
           password: xvvp ojem dfzc dfml
           subject: Message from github actions.
           to: varunmalhotra725@gmail.com
