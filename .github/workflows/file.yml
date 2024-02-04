@@ -77,3 +77,20 @@ jobs:
           else
             echo "Invalid Test Case selected"
           fi
+  sending-email:
+   runs-on: ubuntu-latest
+   steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Send email
+        uses: dawidd6/action-send-mail@v3.6.0
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: varunmalhotra7251@gmail.com
+          password: Varun123@
+          subject: Message from github actions.
+          to: varunmalhotra725@gmail.com
+          from: Varun Kumar
+          secure: true
+          body: workflow completed successfully!
