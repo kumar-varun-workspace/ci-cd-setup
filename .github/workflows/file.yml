@@ -86,7 +86,7 @@ jobs:
         uses: dawidd6/action-send-mail@v3.6.0
         with:
           server_address: smtp.gmail.com
-          server_port: 587
+          server_port: 465
           username: varunmalhotra7251@gmail.com
           password: xvvp ojem dfzc dfml
           subject: Message from github actions.
