@@ -90,7 +90,7 @@ jobs:
           username: ${{secrets.GMAIL_USERNAME}}
           password: ${{secrets.GMAIL_PASSWORD}}
           subject: Message from github actions.
-          to: varunmalhotra725@gmail.com
+          to: varun.kumar@kroger.com
           from: Varun Kumar
           secure: true
           body: workflow completed successfully!
