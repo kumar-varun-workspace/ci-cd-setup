@@ -94,3 +94,4 @@ jobs:
           from: Varun Kumar
           secure: true
           body: workflow completed successfully!
+          attachments: "/Reports/index.html"
