@@ -46,6 +46,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: List directory contents
+        run: ls -R
       - name: Check Test Case
         run: |
           if [ "${{ github.event.inputs.TestCases }}" == "${{ env.testcase1 }}" ]; then
