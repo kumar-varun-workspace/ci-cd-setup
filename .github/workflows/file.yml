@@ -107,7 +107,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const webhookUrl = 'https://deloitte.webhook.office.com/webhookb2/fe16e574-7dfc-43dd-840a-a4f120e1f22f@36da45f1-dd2c-4d1f-af13-5abe46b99921/IncomingWebhook/fcfda556865d44cbb1b4229004ceb279/33a73425-2abf-4864-8928-dfda1d7aa350';
-            const message = `**Notification:** All the smoke scenarios have been executed. Please find this link to see the results: ${process.env.GITHUB_RUN_URL}`;
+            const message = `**Notification:** All the smoke scenarios have been executed. Please find this link to see the results: ${{ process.env.GITHUB_RUN_URL }}`;
             const axios = require('axios');
             axios.post(webhookUrl, {
               "text": message
