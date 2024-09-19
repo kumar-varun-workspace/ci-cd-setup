@@ -11,6 +11,7 @@ public class basic {
 
     @Test(groups = {"calling_this_method_from_testng"}, description = "Simple description about this method")
     public void method(){
+        System.out.println("Hello World");
         System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
         WebDriver driver=new ChromeDriver();
         driver.get("https://www.google.com");
